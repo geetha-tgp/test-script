@@ -1,4 +1,3 @@
-Here's a single `README.md` file you can copy and paste directly into your Git repository:
 
 ```markdown
 # Password Generator Testing Automation
