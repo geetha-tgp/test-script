@@ -94,4 +94,3 @@ pytest test_password_generator.py
    pytest --html=report.html
    ```
 3. Open `report.html` in a browser to view the results.
-```
