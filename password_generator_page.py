@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class PasswordGeneratorPage:
     def __init__(self, browser):
         self.browser = browser
+        self.url = "https://www.security.org/password-generator/"
         self.password_length_input = (By.ID, "passwordLength")
         self.password_length_slider = (By.ID, "passwordLengthRange")
         self.option_lowercase = (By.ID, "option-lowercase")
@@ -13,6 +14,9 @@ class PasswordGeneratorPage:
         self.option_symbols = (By.ID, "option-symbols")
         self.generate_button = (By.ID, "generate")  # Assuming there's an ID for the generate button
         self.generated_password_field = (By.ID, "generatedPassword")  # Assuming there's an ID for the generated password
+
+    def load(self):
+        self.browser.get(self.url)
 
     def set_password_length(self, length):
         # Set the length using the input box
